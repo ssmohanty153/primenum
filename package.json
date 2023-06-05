@@ -1,6 +1,6 @@
 {
   "name": "checkisprimenumber",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "primenum",
   "main": "lib/prime.js",
   "types": "lib/prime.d.ts",
