@@ -6,12 +6,42 @@ export class primenum {
                 flag = false;
                 break;
             }
-
-        if (flag == true)
-            alert(num + " is prime");
-        else {
-            alert(num + " is not prime");
-        }
         return flag
+    }
+    static listAllPrime(num: number) {
+        let numbers: Array<number> = []
+        for (let i = 2; i <= num; i++) {
+            let flag = 0;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (i > 1 && flag == 0) {
+                numbers.push(i);
+            }
+
+        }
+        return numbers
+    }
+
+    static listinBetweenAllPrime(first: number, second: number) {
+        if (first > second) { [first, second] = [second, first] }
+        let numbers: Array<number> = []
+        for (let i = first; i <= second; i++) {
+            let flag = 0;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (i > 1 && flag == 0) {
+                numbers.push(i);
+            }
+
+        }
+        return numbers
     }
 }

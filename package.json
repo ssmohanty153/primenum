@@ -1,9 +1,9 @@
 {
-  "name": "isprime",
-  "version": "1.0.0",
+  "name": "checkisprimenumber",
+  "version": "1.0.2",
   "description": "primenum",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/prime.js",
+  "types": "lib/prime.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
@@ -17,6 +17,10 @@
   "bugs": {
     "url": "https://github.com/ssmohanty153/primenum/issues"
   },
+  "keywords": [
+    "prime isprime primenum",
+    "primenumber"
+  ],
   "homepage": "https://github.com/ssmohanty153/primenum#readme",
   "dependencies": {
     "typescript": "^5.1.3"
